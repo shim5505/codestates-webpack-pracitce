@@ -1,0 +1,49 @@
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg {
+  background-image: url(./images/chicken.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+button {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: ghostwhite;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.colorful {
+  color: #31e1f7;
+  animation-name: colorChange;
+  animation-duration: 4s;
+}
+
+.stop_it {
+  color: red;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #31e1f7;
+  }
+  25% {
+    color: #400d51;
+  }
+  50% {
+    color: #d800a6;
+  }
+  100% {
+    color: #ff7777;
+  }
+}
